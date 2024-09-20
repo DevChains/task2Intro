@@ -1,87 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Demonstration</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>HTML Demonstration Page</h1>
-  </header>
-  <div id="root">
 
-  </div>
-  <section>
-    <h2>Text Formatting</h2>
-    <p>This is a paragraph. You can use HTML to <strong>bold</strong> text, make it <em>italic</em>, or even <u>underline</u> it.</p>
-    <blockquote>
-      This is a blockquote, used for highlighting a section of text.
-    </blockquote>
-    
-    <h2>Lists</h2>
-    <ul>
-      <li>Unordered list item 1</li>
-      <li>Unordered list item 2</li>
-    </ul>
-    <ol>
-      <li>Ordered list item 1</li>
-      <li>Ordered list item 2</li>
-    </ol>
-    
-    <h2>Tables</h2>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Occupation</th>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>25</td>
-        <td>Engineer</td>
-      </tr>
-      <tr>
-        <td>Jane</td>
-        <td>30</td>
-        <td>Designer</td>
-      </tr>
-    </table>
-    
-    <h2>Images</h2>
-    <img src="https://via.placeholder.com/500x300" alt="Placeholder image" class="image">
-    
-    <h2>Forms</h2>
-    <form action="#" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
-      <input type="submit" value="Submit">
-    </form>
-    
-    <h2>Videos</h2>
-    <video controls width="500">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    
-    <h2>Links</h2>
-    <p>Visit <a href="https://www.example.com" target="_blank">Example Website</a> for more information.</p>
-    
-    <h2>Audio</h2>
-    <audio controls>
-      <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
-      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </section>
-  
-  <footer>
-    <p>&copy; 2024 HTML Demo</p>
-  </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="home-about">
+            <div class="left-nav">Home</div>
+            <div class="left-nav">About</div>
+        </div>
+        <div class="name">
+            <h1>JAWAD ALI</h1>
+        </div>
+        <div class="home-about">
+            <div class="skill right-nav">Skills</div>
+            <div class="right-nav">Experience</div>
+            <div class="contact right-nav">Contact</div>
+        </div>
+    </header>
+
+    <section>
+        <div class="home">
+            <div class="home-left">
+                <h3>Name</h3>
+                <p>Jawad Ali</p>
+                <h3>DOB</h3>
+                <p>9 Feb 2003</p>
+                <h3>Qualification</h3>
+                <p>Intermediate</p>
+                <h3>Hobby</h3>
+                <p>Arm wrestling</p>
+            </div>
+            <div class="home-middle"></div>
+            <div class="home-right">
+                <h3>Currently enrolled</h3>
+                <p>COMSATS UNIVERSITY ISLAMABAD</p>
+                <h3>Semester</h3>
+                <p>6th</p>
+                <h3>About me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, pariatur! Et incidunt doloribus,
+                    omnis officia culpa iure adipisci eligendi a debitis, accusantium ex sint labore, temporibus illum
+                    cum excepturi optio.</p>
+            </div>
+        </div>
+
+        <div class="education">
+            <center>
+                <h1>Education</h1>
+            </center>
+            <center>
+                <div class="bacholar edu">
+                    <div class="uni-logo"></div>
+                    <div class="uni-detail">
+                        <div class="uni-name">COMSATS UNIVERSITY ISLAMABAD</div>
+                        <div class="uni-section">
+                            <div class="uni-grade">CGPA: 2.92/4.0</div>
+                            <div class="uni-status">2022-Present</div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <center>
+                <div class="intermediate edu">
+                    <div class="collage-logo"></div>
+                    <div class="uni-detail">
+                        <div class="uni-name">PUNJAB GROUP OF COLLAGE D9 CAMPUS RAWALPINDI</div>
+                        <div class="uni-section">
+                            <div class="uni-grade">MARKS: 1038/1100</div>
+                            <div class="uni-status">2019-2021</div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <div class="skills">
+            <center>
+                <h1>Skills</h1>
+            </center>
+            <div class="skills-container">
+                <div class="skills-left">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <label for="python">Python</label>
+                        <input type="range" id="python" value="70" disabled>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="java">Java</label>
+                        <input type="range" id="java" value="60" disabled>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="cpp">C++</label>
+                        <input type="range" id="cpp" value="60" disabled>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="communication">Communication Skills</label>
+                        <input type="range" id="communication" value="75" disabled>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="time-management">Time Management</label>
+                        <input type="range" id="time-management" value="70" disabled>
+                        <span>70%</span>
+                    </div>
+                </div>
+
+                <div class="skills-right">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <label for="html">HTML</label>
+                        <input type="range" id="html" value="100" disabled>
+                        <span>100%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="css">CSS</label>
+                        <input type="range" id="css" value="80" disabled>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="javascript">JavaScript</label>
+                        <input type="range" id="javascript" value="70" disabled>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="team-work">Team Work</label>
+                        <input type="range" id="team-work" value="50" disabled>
+                        <span>50%</span>
+                    </div>
+                    <div class="skill">
+                        <label for="leadership">Leadership</label>
+                        <input type="range" id="leadership" value="60" disabled>
+                        <span>60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <center>
+                <h1>Experience</h1>
+            </center>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="experience-logo">
+                        <!-- Add company logo here -->
+                    </div>
+                    <div class="experience-details">
+                        <h3>Digital Marketing Consultant</h3>
+                        <p>Company: ABC Agency</p>
+                        <p>Duration: 2020-Present</p>
+                        <p>Worked on developing comprehensive digital marketing strategies for diverse clients, focusing
+                            on SEO, SEM, and social media marketing.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-logo">
+                        <!-- Add company logo here -->
+                    </div>
+                    <div class="experience-details">
+                        <h3>Freelance Web Developer</h3>
+                        <p>Company: Self-Employed</p>
+                        <p>Duration: 2018-2020</p>
+                        <p>Developed and maintained websites using HTML, CSS, and JavaScript. Collaborated with clients
+                            to design user-friendly, responsive websites.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-logo">
+                        <!-- Add company logo here -->
+                    </div>
+                    <div class="experience-details">
+                        <h3>Content Creator</h3>
+                        <p>Platform: YouTube</p>
+                        <p>Duration: 2021-Present</p>
+                        <p>Created engaging content on technology and digital marketing trends, growing the channel to
+                            10K+ subscribers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-me">
+
+            <h1>Contact me</h1>
+            <div class="contact-inside">
+                <div class="contact-left">
+                    <div class="contact-logo">
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="x"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="contact-data">
+                        <center>
+                            <div class="contact-email cont">Email: jawadaliraja2022@gmail.com</div>
+                        </center>
+                        <center>
+                            <div class="contact-phone cont">Contact No: +92 315 5720296</div>
+                        </center>
+
+
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <div class="form-top">
+                            <div class="form-smaller">
+                                <input class="form-email form" type="email" name="" id="" placeholder="Your Email">
+                                <br>
+                                <input class="form-text form" type="text" name="" id="" placeholder="Your Name">
+                            </div>
+                            <input class="large-form" type="text" name="" id="" placeholder="what you want to say">
+                        </div>
+                       <center> <input class="btn" type="button" value="Submit"> </center>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<footer>
+    @Copyright by Jawad Ali
+</footer>
+
 </body>
+
 </html>
